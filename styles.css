@@ -1,0 +1,23 @@
+h1{
+    background-color: cadetblue;
+    color:blue;
+    font-size: 180 px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%
+}
+h2{
+    background-color: paleturquoise;
+    color:blue;
+    font-size: 200 px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+div{
+    background-color:whitesmoke;
+    color: cornflowerblue;
+    font-size: 150 px;
+    font-weight: normal;
+    text-align: center;
+}
