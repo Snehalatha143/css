@@ -1,0 +1,18 @@
+<html>
+<head> </head>
+<script type="text/javascript">
+arr = [21,46,22,48,220,488,5550,1926];
+var firstlargest = 0;
+var secondlargest=0;
+
+for (var i = 0; i < arr.length; i++) {
+    if (firstlargest<arr[i]) {
+        secondlargest= firstlargest;
+        firstlargest=a[i];
+    }else if(secondlargest<a[i]){
+ secondlargest=arr[i];
+}
+}
+document.write(secondlargest);
+</script>
+</html>

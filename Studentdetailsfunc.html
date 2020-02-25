@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var p = new Person(1,"Sneha","chennu",20,20,20);
+            function Person(id,first, last,mym1,mym2,mym3) {
+              this.id=id;
+              this.firstname=first;
+              this.lastname=last;
+              this.m1=mym1;
+              this.m2=mym2;
+              this.m3=mym3;
+              this.getFullName=function(){
+                  return this.firstName + " " + this.lastName
+              }; 
+              this.gettotal=function(){
+                  return this.m1+this.m2+this.m3;
+              };
+              this.getgrade=function(){
+                  this.total=this.gettotal();
+                  if(this.total>80){
+                      return "Grade A";
+                  }
+                  if((this.total<80)&&(this.total>70)){
+                    return "Grade B";
+                  }
+                  if((this.total<70)&&(this.total>60)){
+                    return "Grade C";
+                  }
+                  if((this.total<60)&&(this.total>35)){
+                    return "Grade D";
+                  }
+                  if(this.total<35){
+                    return "Fail";
+                  }
+              }
+             }  
+             document.write("Student id"+ "  "+ p.id );
+             document.write("Student name" + "  " +p.firstname + p.lastname); 
+             document.write(p.gettotal());   
+             document.write(p.getgrade());   
+        </script>
+    </body>
+</html>
