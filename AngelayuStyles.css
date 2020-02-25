@@ -1,0 +1,22 @@
+.top-container{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    border:solid 10px;
+   /*margin: 10px;*/
+}
+.Middle-container{
+    background-color:royalblue;
+    width: 200px;
+    height: 200px;
+    border:solid 10px;
+    margin-left: 220px;
+}
+.Bottom-container{
+    background-color: salmon;
+    border:solid 10px;
+    width: 200px;
+    height:200px;
+    margin-left: 440px;
+
+}

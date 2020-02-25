@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+    </head>
+    <body>
+        <script>
+          var person=function(){
+            this.getfulldetails=function(firstname,lastname,age,address,city){
+              return firstname+"  "+lastname+","+ age + address + city;
+            }
+            this.getEmail=function(email){
+              return email;
+            }
+          }
+          var p1=new person();
+          var p2=new person();
+          document.write(p1.getfulldetails.apply(p1,["Gopal","chennu",50,"NJ","USA"]));
+          document.write(p1.getEmail.apply(p1,["Gopalchennu@gmail.com"]));
+          document.write(p2.getfulldetails.apply(p2,["Raghav","chennu",60,"VA","USA"]));
+          document.write(p2.getEmail.apply(p2,["Raghavchennu@gmail.com"]));
+
+        </script>    
+    </body>
+</html>
