@@ -1,0 +1,37 @@
+Driver.get("https://www.google.com/gmail");
+
+		Driver.findElement(By.xpath("//a[text()='Help']")).click();
+
+		Driver.findElement(By.partialLinkText("Priva")).click();
+
+		Driver.findElement(By.linkText("Terms")).click();
+
+		System.out.println(Driver.getTitle());
+
+		Set<String>ids=Driver.getWindowHandles();
+
+		Iterator<String> it=ids.iterator();
+
+		String parent=it.next();
+
+		String child1=it.next();
+
+		String child2=it.next();
+
+		String child3=it.next();
+
+		Driver.switchTo().window(child1);
+
+		System.out.println(Driver.getTitle());
+
+		Driver.switchTo().window(child2);
+
+		System.out.println(Driver.getTitle());
+
+		Driver.switchTo().window(child3);
+
+		System.out.println(Driver.getTitle());
+
+		Driver.switchTo().window(parent);
+
+		System.out.println(Driver.getTitle());

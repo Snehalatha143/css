@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var person = {
+                firstName:"John",
+                lastName: "Doe",
+                email:"Radhakrishna@outlook.com",
+                address:"williamsburg",
+           getfullName: function(age) {
+           return this.firstName + " " + this.lastName + "," + age +","  ;
+           },
+           getemail:function(){
+               return this.email;
+           },
+           getaddress:function(state,country){
+               return this.address +","+ state + "," +country;
+           }
+
+         }
+         
+         document.write(person.getfullName.call(person,30)); 
+         document.write(person.getemail.call(person));
+         document.write(person.getaddress.call(person,"Virginia","USA"));
+         
+
+        </script>
+    </body>
+
+</html>
